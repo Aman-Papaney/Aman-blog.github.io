@@ -1,0 +1,204 @@
+
+<!doctype html>
+	<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+		<title>Tech Reviews</title>
+		<link rel="shortcut icon" type="image/jpg" href="favicon.jpg"/>
+	</head>
+	<body>
+
+		<!--  Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+		<!-- navigation bar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="About.html">About</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact Us</a>
+						</li>
+
+					</ul>
+					<form class="d-flex">
+						<input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+
+					<!-- log in and sign up -->
+					<button class="btn btn-outline-dark mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#SignUpOffCanvas" aria-controls="offcanvasExample">
+						Sign Up
+					</button>
+					<button class="btn btn-outline-dark mx-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#LogInOffCanvas" aria-controls="offcanvasExample">
+						Log In
+					</button>
+
+				</div>
+			</div>
+		</nav>
+
+		<!-- Off Canvas Log In -->
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="LogInOffCanvas" aria-labelledby="offcanvasExampleLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title mx-4" id="offcanvasExampleLabel">Log In</h5><br><br>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<div>
+					<form>
+						<div class="mb-3">
+							<label for="exampleInputEmail1" class="form-label">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+						</div>
+						<div class="mb-3">
+							<label for="exampleInputPassword1" class="form-label">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1">
+						</div>
+						<div class="mb-3 form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">Log Me In</label>
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Off Canvas Sign Up -->
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="SignUpOffCanvas" aria-labelledby="offcanvasExampleLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title mx-5" id="offcanvasExampleLabel">Sign Up</h5>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<div>
+					<form>
+						<div class="mb-3">
+							<label for="exampleInputEmail1" class="form-label">Email address / Username</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+						</div>
+						<div class="mb-3">
+							<label for="exampleInputPassword1" class="form-label">New Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1">
+						</div>
+						<div class="mb-3">
+							<label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1">
+						</div>
+						<div class="mb-3 form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">Sign Me In</label>
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- Carousel -->
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item ">
+					<img src="carousal1.jpg" class="d-block w-100 img-fluid" alt="asdfghjkl">
+				</div>
+				<div class="carousel-item">
+					<img src="carousal2.jpg" class="d-block w-100 img-fluid" alt="asdfghjkl">
+				</div>
+				<div class="carousel-item active">
+					<img src="carousal3.jpg" class="d-block w-100 img-fluid" alt="asdfghjkl">
+				</div>
+				<div class="carousel-item">
+					<img src="carousal4.jpg" class="d-block w-100 img-fluid" alt="asdfghjkl">
+				</div>
+				<div class="carousel-item">
+					<img src="carousal5.jpg" class="d-block w-100 img-fluid" alt="asdfghjkl">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide=" prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+			</button>
+		</div>
+
+
+		<!-- Cards -->
+		<div class="row mb-2 ">
+			<div class="card mx-5 my-5" style="width: 20rem;">
+				<img src="phone.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Mobile</h5>
+					<p class="card-text">Articles about latest Mobile Phones.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+
+			<div class="card mx-5 my-5 " style="width: 20rem;">
+				<img src="laptop.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Laptop</h5>
+					<p class="card-text">Blogs of Laptops.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+
+			<div class="card mx-5 my-5" style="width: 20rem;">
+				<img src="acc.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Accessories</h5>
+					<p class="card-text">Accessories related to Mobile and Laptops.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Footer -->
+	<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+		<div class="col-md-4 d-flex align-items-center">
+			<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+				<svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+			</a>
+			<span class="text-muted">© 2021 Tech Reviews, Inc</span>
+		</div>
+
+		<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+			<li class="ms-3"><a class="text-muted" href="https://instagram.com"><img src="insta.jpg" class="bi mx-3" width="24" height="24"></img></a></li>
+			<li class="ms-3"><a class="text-muted" href="https://twitter.com"><img src="twitter.jpg"  class="bi" width="24" height="24"></img></a></li>
+			<li class="ms-3"><a class="text-muted" href="https://github.com"><img src="github.jpg"  class="bi mx-3" width="24" height="24"></img></a></li>
+		</ul>
+	</footer>
+</body>
+</html>
